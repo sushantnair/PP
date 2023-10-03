@@ -1,8 +1,8 @@
 string = input('Enter a string')
+strlist = string.split()
 strdict = dict()
-for line in string:
-    line = line.rstrip()
-    print(line)
-    for word in line:
-        strdict[word] = strdict.get(word, 0) + 1
+for word in strlist:
+    print(word)
+    for character in word:
+        strdict[character] = strdict.get(character, 0) + 1
 print(strdict)
